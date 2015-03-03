@@ -1,0 +1,32 @@
+// *************************************
+//
+//   Emotion
+//
+// *************************************
+@import "compass/css3/transition"
+@import "compass/css3/transform"
+#Emotion
+  width: 78%
+  margin: auto
+  label
+    position: relative
+    span
+      +transition(all 0.5s)
+      position: absolute
+      top: -0.1em
+      color: MDcolor(grey, 400)
+      &.is-focus
+        +transform(scale(0.55))
+        top: -$b-space * 1.2
+        margin-left: -.9em
+        color: MDcolor(light-blue, 800)
+  input
+    background: none
+    height: 30px
+    line-height: 1.5
+    border: 0
+    border-bottom: 2px MDcolor(light-blue, 600) solid
+    &:focus
+      +transition(all 0.5s)
+      outline: 0
+      border-bottom: 2px MDcolor(light-blue, 800) solid
