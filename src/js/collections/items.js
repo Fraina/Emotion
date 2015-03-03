@@ -11,9 +11,6 @@
   var EmotionCollcetion = Backbone.Collection.extend({
     model: Model,
     url: 'js/collections/data.json',
-    initialize: function() {
-      console.log('[Collection] EmotionCollcetion has been initialized.');
-    },
     filterValues: function(filterValue) {
       if (filterValue == "") return [];
       return this.filter(function(data) {
