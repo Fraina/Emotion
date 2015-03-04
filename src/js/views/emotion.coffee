@@ -54,7 +54,7 @@ define [
         resultsLength = @results.length
         frag = $(document.createDocumentFragment())
         for i in [0...resultsLength]
-          node = $('<span class="tags mrm"></span>')
+          node = $('<span class="tags"></span>')
           node.attr('data-index', i).text(@results[i].get('command'))
           frag.append(node)
         @$el.find('div.emotions').empty().append frag
