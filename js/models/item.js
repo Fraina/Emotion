@@ -1,0 +1,1 @@
+!function(e){"use strict";define(["jquery","underscore","backbone"],e)}(function(e,n,t){"use strict";var r=t.Model.extend({defaults:{command:"",tarNone:"",tarTarget:""},initialize:function(){}});return r});
