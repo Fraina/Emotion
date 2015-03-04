@@ -28,6 +28,7 @@
     }
   },
   "deploy": {
-    "cacheDir": ".cache"
+    "cacheDir": ".cache",
+    "origin": "github"
   }
 }
